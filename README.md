@@ -1,89 +1,196 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+PROMPT USADO NO COPILOT
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+"Copilot,
+Me ajude a desenvolver um aplicativo de Finanças Pessoais, chamado "Bitcoin Wallet", que tenha IA integrada.
+DESAFIO
+Problema: Os investidores da criptomoeda "Bitcoin" tem muita dificuldade de acompanhar a compra do seu ativo após ser finalizado. Eles compram uma determinada fração da cripto, numa determinada data, horário e preço. Isso fica no histórico da Exchange (Sites de compras especializados), porém, esses sites tem layout difícil de entender o ganho ou perda real do investidor.
+Preciso que esse aplicativo tenha um "agente IA" que seja capaz de me informar quanto eu ganhei até o momento, quanto eu perdi. Nesse aplicativo tem que aparecer uma área que aparece o preço do bitcoin em tempo real, para que eu saiba o melhor momento de comprar.
+PÚBLICO ALVO
+Investidores apenas de Bitcoin
+FUNCIONALIDADES CHAVES
+- O investidor coloca o data, hora, fração, e valor da compra em real e dá um confirma.
+- O aplicativo vai registrar o dado em uma lista tipo histórico, do mais antigo para a compra mais recente.
+- O aplicativo já inicia um cálculo baseado no valor da minha compra, comparando com o valor atual do mercado. Exemplo: Eu registro que em 08/01/2026, às 20:00, comprei 000000,21 de bitcoin por R$ 200,00 reais. Assim que cadastrei no aplicativo as informações, o bitcoin subiu 10%, ou seja, R$ 20,00 reais, aparecendo para mim na Carteira: R$ 220,00 reais na cor verde, em outra opção que é Lucro, aparecendo R$ 20,00 reais, na opção Prejuízo: R$ 00:00 reais.
+- O agente IA, vai resumir para o usuário, em forma de texto, como o mercado de criptomoeda está se comportando naquele momento e como está sendo o desempenho do Bitcoin. Ele vai informar também, se o usuário está tendo prejuízo ou não. Caso perguntado se é o momento certo de vender a criptomoeda, ele vai orientar se sim ou não, sempre em português.
+- Visualizar relatórios simples e personalizados.
+Espero que esse meu prompt esteja bom, para iniciar esse desafio, me sugira alterações se precisar."
 
-## ✨ O que é Vibe Coding
+Sugentão de Melhoria, feito pelo Copilot:
+"🔧 Sugestões para melhorar o seu prompt
+🧱 1. Deixar o objetivo mais direto e mensurável
+Em vez de apenas explicar o problema, você pode transformar o objetivo em algo mais concreto:
+“Criar um aplicativo mobile chamado Bitcoin Wallet, focado exclusivamente em investidores de Bitcoin, que permita registrar compras, acompanhar lucros/prejuízos em tempo real e receber análises inteligentes do mercado.”
 
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
+Isso ajuda a IA (e desenvolvedores) a entenderem exatamente o que deve ser entregue.
 
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
+📊 2. Detalhar melhor o funcionamento do cálculo
+Seu exemplo está ótimo, mas você pode reforçar:
+- Como o app deve recalcular automaticamente o valor da carteira
+- Se deve considerar taxas da exchange (opcional)
+- Se o cálculo é por compra individual ou consolidado
+Exemplo de melhoria:
+“O cálculo deve considerar cada compra individualmente, mostrando lucro/prejuízo por operação e também o total consolidado da carteira.”
 
-## 🎯 Desafio
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
+🤖 3. Especificar melhor o comportamento do agente de IA
+O item 4 é excelente, mas pode ficar ainda mais claro:
+- O tom da IA (informativo, amigável, direto)
+- O tipo de análise que ela deve gerar
+- A frequência das análises
+- Como ela deve responder perguntas sobre “vender ou não”
+Exemplo:
+“O agente IA deve gerar análises curtas e objetivas sobre o mercado, atualizadas sempre que o usuário abrir o app ou solicitar manualmente. Ao ser perguntado se é um bom momento para vender, a IA deve responder com base em dados, mas sempre deixando claro que não é recomendação financeira.”
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
 
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+📈 4. Detalhar os relatórios
+Você pode especificar:
+- Relatórios por período (dia, semana, mês, ano)
+- Relatórios por operação
+- Gráficos simples (linha, barra)
+- Exportação (se quiser)
 
-## 🪄 Etapas do Desafio
+🎨 5. Adicionar requisitos de interface
+Nada muito complexo, mas ajuda:
+- Tela de cadastro de compra
+- Tela da carteira com valor total
+- Tela de histórico
+- Tela do agente IA
+- Tela de relatórios
 
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
+🔐 6. Adicionar requisitos de segurança
+Como envolve dinheiro, é bom incluir:
+- Login com biometria
+- Criptografia local dos dados
+- Backup opcional na nuvem
+"
 
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
+PROMPT FINAL DADO PELO COPILOT:
 
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+"🚀 PROMPT PROFISSIONAL – Aplicativo “Bitcoin Wallet” com IA Integrada
+Quero desenvolver um aplicativo mobile chamado Bitcoin Wallet, focado exclusivamente em investidores de Bitcoin. O objetivo é permitir que o usuário registre suas compras de BTC, acompanhe automaticamente lucros e prejuízos em tempo real e receba análises inteligentes sobre o mercado através de um agente de IA integrado.
 
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+🎯 Objetivo do Aplicativo
+Criar uma ferramenta simples, intuitiva e inteligente que ajude investidores de Bitcoin a:
+- Registrar compras de forma organizada
+- Visualizar lucro/prejuízo atualizado automaticamente
+- Acompanhar o preço do Bitcoin em tempo real
+- Receber análises e orientações de um agente de IA
+- Gerar relatórios simples e personalizados
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+👥 Público-Alvo
+Investidores que operam exclusivamente Bitcoin, desde iniciantes até avançados.
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+🧩 Problema a Ser Resolvido
+Investidores de Bitcoin têm dificuldade de acompanhar o desempenho real de suas compras após a execução na exchange.
+Os históricos das plataformas são confusos e não mostram claramente:
+- Lucro atual
+- Prejuízo atual
+- Evolução da carteira
+- Momento ideal para comprar ou vender
+O aplicativo deve resolver isso com clareza, simplicidade e inteligência.
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+🔑 Funcionalidades Principais
+1. Registro de Compras
+O usuário deve informar:
+- Data da compra
+- Horário
+- Fração de Bitcoin adquirida
+- Valor pago em reais
+Ao confirmar, o app salva a operação em um histórico ordenado do mais antigo para o mais recente.
 
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
-```
+2. Cálculo Automático de Lucro/Prejuízo
+Assim que a compra é registrada, o app deve:
+- Consultar o preço atual do Bitcoin
+- Calcular automaticamente o valor atual daquela operação
+- Exibir:
+- Valor atual da operação (ex.: R$ 220,00)
+- Lucro (ex.: R$ 20,00)
+- Prejuízo (ex.: R$ 0,00)
+- Usar cores:
+- Verde para lucro
+- Vermelho para prejuízo
+O cálculo deve ser feito por operação e também consolidado na carteira.
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+3. Preço do Bitcoin em Tempo Real
+O app deve exibir:
+- Cotação atual
+- Variação percentual
+- Gráfico simples (opcional)
+Atualização automática em intervalos curtos.
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+4. Agente de IA Integrado
+O agente deve:
+- Resumir o comportamento atual do mercado de criptomoedas
+- Informar se o usuário está com lucro ou prejuízo
+- Explicar tendências de forma simples e objetiva
+- Responder perguntas como:
+- “É um bom momento para vender?”
+- “O mercado está em alta ou baixa?”
+- Sempre em português
+- Sempre deixando claro que não é recomendação financeira
+O tom deve ser:
+- Informativo
+- Amigável
+- Direto
 
-### 2. Explorando o Lovable na Prática
+5. Relatórios Personalizados
+O usuário deve conseguir visualizar relatórios por:
+- Dia
+- Semana
+- Mês
+- Ano
+- Por operação
+- Consolidado
+Relatórios simples, com gráficos básicos e textos explicativos.
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+🔐 Requisitos de Segurança
+- Login com biometria
+- Criptografia local dos dados
+- Backup opcional na nuvem
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+🎨 Requisitos de Interface (UX/UI)
+O app deve conter:
+- Tela de cadastro de compra
+- Tela da carteira com valor total
+- Tela de histórico
+- Tela do agente IA
+- Tela de relatórios
+Design minimalista, intuitivo e focado em clareza.
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+🧠 Comportamento da IA
+A IA deve:
+- Ser proativa ao explicar o mercado
+- Ser clara ao mostrar lucro/prejuízo
+- Ser cautelosa ao responder sobre compra/venda
+- Evitar termos técnicos complexos
+- Ser sempre objetiva
 
-### 3. Entregando o Desafio na DIO
+✔️ Fim do Prompt
+"
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+IMAGENS DO APLICATIVO/SITE
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+<img width="1313" height="986" alt="image" src="https://github.com/user-attachments/assets/bf26a44b-dcdc-4ec2-af88-9966057a6cdb" />
+<img width="1303" height="987" alt="image" src="https://github.com/user-attachments/assets/7f8c194a-f31c-4cde-9ef3-6a30b33f0e54" />
+<img width="1314" height="996" alt="image" src="https://github.com/user-attachments/assets/405dab0f-4b6a-46da-b600-55aafe90198f" />
+<img width="1312" height="1001" alt="image" src="https://github.com/user-attachments/assets/39963462-4725-464f-8ce9-8db4e43cb36e" />
+<img width="1311" height="1001" alt="image" src="https://github.com/user-attachments/assets/1fbb9895-c438-4832-a9e7-962088b33131" />
+<img width="1312" height="1010" alt="image" src="https://github.com/user-attachments/assets/e9aa69b9-2861-4de4-9235-1bfa56a6bfcc" />
+<img width="1314" height="1002" alt="image" src="https://github.com/user-attachments/assets/d8617076-30ad-4da7-b6ce-c5b6a39d9fd3" />
 
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
+BREVE RELATO
 
-## 💬 Conclusão
+Eu começei a investir por conta própria em Bitcoin, aprendi tudo assistindo vídeos e lendo sites e artigos. Porém, eu tinha muita dificuldade em manusear a exchange, depois ouvi relato de outros investidores também, reclamando da mesma coisa, que comprar era fácil, mas acompanhar era complicado. Por isso pensei nesse aplicativo como resolução. Inicialmente Bitcoin, mas quem sabe, não possa se estender para outras criptos?
 
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+REFLEXÃO
+
+Amei todo o processo desse curso, desde às aulas, até esse desafio final. Já impactou a minha vida, pois já consegui desenvolver um site offiline para o meu trabalho e que ajudou a minha chefe, ela ficou feliz e vai me dar uma gratificação.
+
+SOBRE O APLICATIVO CRIADO
+
+Superou as minhas expectativas, tem muito o que melhorar, como por exemplo, um botão de exclusão de compra, mas faltou crédito. Mas de modo geral, cumpriu o prometido.
+
+
+
+
+
